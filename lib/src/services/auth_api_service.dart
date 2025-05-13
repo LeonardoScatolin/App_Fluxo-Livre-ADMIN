@@ -3,7 +3,6 @@ import 'package:app_fluxolivrep/src/utils/constants.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
-
 class AuthApiService {
    static const String baseUrl = Constants.baseUrl;
    static Future<Map<String?, dynamic>> login(String email, String password) async {

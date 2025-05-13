@@ -30,8 +30,6 @@ class AdminPage extends StatelessWidget {
         final routeName = item['route'] as String?;
         if (routeName != null && routeName.isNotEmpty) {
           Navigator.of(context).pushNamed(routeName);
-        } else {
-          print('Rota $routeName não existe');
         }
       },
       child: ClipRRect(

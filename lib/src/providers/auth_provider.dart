@@ -38,5 +38,4 @@ class AuthProvider with ChangeNotifier{
       _token = await AuthApiService.getToken();
       notifyListeners();
     }
-
 }

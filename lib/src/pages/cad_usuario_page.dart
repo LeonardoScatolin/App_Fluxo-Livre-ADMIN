@@ -33,7 +33,7 @@ class _CadUsuarioPageState extends State<CadUsuarioPage> {
         await Provider.of<UserRegisterProvider>(
           context,
           listen: false,
-        ).resterUser(user);
+        ).registerUser(user);
         if (mounted) {
           showSuccessSnackBar(context, 'Usuário Cadastrado com Sucesso!');
           Navigator.pushReplacement(
